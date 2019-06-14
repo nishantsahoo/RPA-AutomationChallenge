@@ -7,4 +7,4 @@ driver.implicitly_wait(30)
 driver.maximize_window()
 
 # Navigate to the application home page
-driver.get("http://www.google.com")
+driver.get("http://rpachallenge.com/")
