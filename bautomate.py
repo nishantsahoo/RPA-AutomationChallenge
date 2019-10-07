@@ -11,7 +11,7 @@ driver.maximize_window()
 
 driver.get("http://rpachallenge.com/")
 
-javascript_exec = "$('button#start').click();"
+javascript_exec = "function getElementsByText(str, tag = 'a') {  return Array.prototype.slice.call(document.getElementsByTagName(tag)).filter(el => el.textContent.trim() === str.trim());}getElementsByText('Start', 'button')[0].click();"
 
 for i in range(1,11):
 	for col in sheet.iter_cols(max_col=7, max_row=11, values_only=True):
